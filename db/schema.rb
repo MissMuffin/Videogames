@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140124091450) do
+
+  create_table "games", force: true do |t|
+    t.string   "title"
+    t.string   "studio"
+    t.text     "comment"
+    t.integer  "stars"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
