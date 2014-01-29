@@ -19,7 +19,7 @@ FactoryGirl.define do
   factory :sims, class: Game do
     title "Sims 3"
     studio "EA Games"
-    comment "äh...hahahaha...Vorsicht! Macht süchtig"
+    comment "aeh...hahahaha...Vorsicht! Macht suechtig"
     stars 4
   end
 

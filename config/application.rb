@@ -8,6 +8,13 @@ Bundler.require(:default, Rails.env)
 
 module Videogames
   class Application < Rails::Application
+
+    # silence deprecation warning as described in
+
+    # http://stackoverflow.com/questions/20361428/rails-i18n-validation-deprecation-warning
+
+    config.i18n.enforce_available_locales = true
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

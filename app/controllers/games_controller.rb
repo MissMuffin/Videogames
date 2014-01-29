@@ -4,12 +4,26 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.json
   def index
-    @games = Game.all
+    if params[:sort]
+
+     # see http://guides.rubyonrails.org/active_record_querying.html
+
+      @game = Game.order(stars: :desc)
+
+    else
+
+      @game = Game.all
+
+    end
   end
 
   # GET /games/1
   # GET /games/1.json
   def show
+  end
+
+  def landing
+    @game = Game.last
   end
 
   # GET /games/new
