@@ -20,7 +20,7 @@ describe "Games" do
 
       [5,2,1,3,4].each do |i|
 
-         create(:games, title: "Game No #{i}", stars: i)
+         create(:mass, title: "Game No #{i}", stars: i)
 
       end
 
@@ -28,7 +28,7 @@ describe "Games" do
 
     it "shows the songs in the correct order" do
 
-        visit game_path
+        visit games_path
 
         click_link('v')
 

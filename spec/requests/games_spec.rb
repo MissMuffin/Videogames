@@ -15,13 +15,13 @@ describe "Games" do
 
 	describe "index" do
 		it "shows the headline" do
-			visit game_path
-			expect(page).to_have_content 'Listing games'
-			expect(page).to_have_content 'Team ICO'
+			visit games_path
+			expect(page).to have_content 'Listing games'
+			expect(page).to have_content 'Team ICO'
 		end
 		it "should list all game instances" do
-			visit game_path
-			expected_row_count = Games.count+1
+			visit games_path
+			expected_row_count = Game.count+1
 			page.all("table tr").count.should eql(expected_row_count)
 		end
 	end
