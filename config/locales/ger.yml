@@ -19,7 +19,8 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hi there"
-  latest: "Latest Game"
-  by: "by"
+ger:
+  hello: "Hallo du da"
+  latest: "Neuestes Spiel"
+  by: "von"
+  

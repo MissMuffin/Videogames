@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
+<p> <%= t('hello') %></p>
 
-
-<p> Hi there.</p>
-
-<p>Latest Game: <%= @game.title %> by <%= @game.studio %></p>
+<p><%= t('latest') %>: <%= @game.title %> <%= t('by') %> <%= @game.studio %></p>
